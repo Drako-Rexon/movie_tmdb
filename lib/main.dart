@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movie_tmdb/home.dart';
+import 'package:movie_tmdb/screens/home.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +16,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: Colors.purple,
-          fontFamily: GoogleFonts.breeSerif().fontFamily),
+          fontFamily: GoogleFonts.openSans().fontFamily),
       home: const Home(),
     );
   }
