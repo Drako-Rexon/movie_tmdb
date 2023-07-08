@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_tmdb/description.dart';
+import 'package:movie_tmdb/screens/description.dart';
 import 'package:movie_tmdb/utils/constants.dart';
 import 'package:movie_tmdb/utils/texts.dart';
 

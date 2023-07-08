@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:movie_tmdb/utils/constants.dart';
 import 'package:movie_tmdb/widgets/top_rated.dart';
 import 'package:movie_tmdb/widgets/trending.dart';
 import 'package:movie_tmdb/widgets/tv.dart';
@@ -52,10 +53,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: primaryColor,
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          title: const Text('Movie TMDB'),
+          backgroundColor: primaryColor,
+          title: const Text(
+            'Movie TMDB',
+            style: TextStyle(fontWeight: FontWeight.w900),
+          ),
+          centerTitle: true,
         ),
         body: ListView(
           children: [
