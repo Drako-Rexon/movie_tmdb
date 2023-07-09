@@ -3,8 +3,8 @@ import 'package:movie_tmdb/utils/constants.dart';
 import 'package:movie_tmdb/utils/texts.dart';
 
 class TopRated extends StatelessWidget {
-  const TopRated({super.key, required this.toprated});
-  final List toprated;
+  const TopRated({super.key, required this.topRated});
+  final List topRated;
 
   @override
   Widget build(BuildContext context) {
@@ -34,13 +34,13 @@ class TopRated extends StatelessWidget {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                               image: NetworkImage(
-                                  posterUrl + toprated[ind]['poster_path']),
+                                  posterUrl + topRated[ind]['poster_path']),
                             ),
                           ),
                         ),
                         Container(
                           child: Text(
-                            toprated[ind]['title'] ?? 'Loading...',
+                            topRated[ind]['title'] ?? 'Loading...',
                             style: textModified(),
                           ),
                         ),
@@ -49,7 +49,7 @@ class TopRated extends StatelessWidget {
                   ),
                 );
               },
-              itemCount: toprated.length,
+              itemCount: topRated.length,
             ),
           )
         ],

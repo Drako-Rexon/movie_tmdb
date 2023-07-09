@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
         body: ListView(
           children: [
             TV(tv: tvPopular),
-            TopRated(toprated: topRatedMovies),
+            TopRated(topRated: topRatedMovies),
             TrendingMovies(trending: trendingMovies)
           ],
         ));

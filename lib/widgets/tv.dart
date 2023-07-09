@@ -108,7 +108,7 @@ class TV extends StatelessWidget {
                 );
               },
             ),
-          )
+          ),
         ],
       ),
     );
